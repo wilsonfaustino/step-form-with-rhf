@@ -9,7 +9,7 @@ import { PersonalDataStep } from '@/components/steps/personal-data-step'
 import type { FormValues } from './schemas/form-schema'
 import { formSchema } from './schemas/form-schema'
 
-const App = () => {
+export const App = () => {
   const form = useForm<FormValues>({
     mode: 'onBlur',
     resolver: zodResolver(formSchema),
@@ -54,5 +54,3 @@ const App = () => {
     </div>
   )
 }
-
-export default App
